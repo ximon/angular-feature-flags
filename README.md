@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/PageUpPeopleOrg/angular-feature-flags.svg?branch=master)](https://travis-ci.org/PageUpPeopleOrg/angular-feature-flags)
+[![Build Status](https://travis-ci.org/pageuppeople-opensource/angular-feature-flags.svg?branch=master)](https://travis-ci.org/pageuppeople-opensource/angular-feature-flags)
 ## angular-feature-flags
 
 > This repo is forked from https://github.com/michaeltaranto/angular-feature-flags which is no longer being supported. This version provides support for functionality specifically needed by [PageUp](https://www.pageuppeople.com/), your milage may vary.
