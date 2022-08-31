@@ -25,7 +25,7 @@ You can then add the **override** panel to your app and turn individual features
 The flag data that drives the feature flag service is a json format. Below is an example:
 ```json
 [
-    { "key": "...", "active": "...", "name": "...", "description": "..." },
+    { "key": "...", "environments": ["..."], "name": "...", "description": "..." },
     ...
 ]
 ```
@@ -35,8 +35,8 @@ The flag data that drives the feature flag service is a json format. Below is an
     <td>Unique key that is used from the markup to resolve whether a flag is active or not.</td>
    </tr>
    <tr>
-    <td><b>active</b></td>
-    <td>Boolean value for enabling/disabling the feature</td>
+    <td><b>environments</b></td>
+    <td>An object containing properties named after environment names with a true/false value for enabling/disabling the feature per environment</td>
    </tr>
    <tr>
     <td><b>name</b></td>
@@ -72,7 +72,7 @@ var myApp = angular.module('app', ['feature-flags']);
 
 myApp.config(function(featureFlagsProvider) {
   featureFlagsProvider.setInitialFlags([
-    { "key": "...", "active": "...", "name": "...", "description": "..." },
+    { "key": "...", "environments": {"...": true}, "name": "...", "description": "..." },
   ]);
 });
 ```
